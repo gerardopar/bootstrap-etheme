@@ -1,0 +1,846 @@
+<!-- 
+    Gerardo Paredes 
+    bootstrap-ecommerce
+    DOPWEB - Assignment
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- favicon -->
+    <link rel="icon" type="image/png" href="./img/favicon.png"/>
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Roboto:100,300,400,500,700|Philosopher:400,400i,700,700i" rel="stylesheet">
+    <!-- Bootstrap4 CSS CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+    <!-- stylesheet -->
+    <link rel="stylesheet" type="text/css" href="./css/styles.css" />
+    <link rel="stylesheet" type="text/css" href="./css/stylesv2.css" />
+    <link rel="stylesheet" type="text/css" href="./css/media-queriesv2.css" />
+    <title>eStartUp Bootstrap Template</title>
+</head>
+<body>
+        <!-- video modal -->
+        <div class="modal__backdrop" id="backdrop">
+            <div class="modal__video--wrap">
+                <iframe class="modal__video" src="https://www.youtube.com/embed/s22ViV7tBKE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+                <button class="close__btn" id="close-modal">X</button>
+            </div>
+        </div>
+
+        <!-- fixed home button -->
+        <a href="#home" id="home-btn" class="fixed__home--btn"><i class="fas fa-angle-up"></i></a>
+
+        <!-- mobile navigation -->
+        <div class="mobile__nav--backdrop">
+            <button id="mobile-close-btn" class="mobile__nav--close">X</button>
+            <div class="mobile__nav--sidebar">
+                <ul class="mobile__nav--list">
+                    <li class="mobile__nav--item"><a href="#home" class="mobile__nav--link--home">Home</a></li>
+                    <li class="mobile__nav--item"><a href="#about" class="mobile__nav--link">About</a></li>
+                    <li class="mobile__nav--item"><a href="#features" class="mobile__nav--link">Features</a></li>
+                    <li class="mobile__nav--item"><a href="#gallery" class="mobile__nav--link">Screenshots</a></li>
+                    <li class="mobile__nav--item"><a href="#team" class="mobile__nav--link">Team</a></li>
+                    <li class="mobile__nav--item"><a href="#pricing" class="mobile__nav--link">Pricing</a></li>
+                    <li class="mobile__nav--item"><a href="#blog" class="mobile__nav--link">Blog</a></li>
+                    <li class="mobile__nav--item"><a href="#contact" class="mobile__nav--link">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+
+    <!-- header navigation -->
+    <header class="header" id="header">
+        <nav class="header__nav">
+            <div class="header__logo--wrap">
+                <p class="header__logo"><span class="header__logo--span">e</span>Startup</p>
+            </div>
+
+            <ul class="header__nav--list">
+                <li class="header__nav--item"><a href="#home" class="header__nav--link--home">Home</a></li>
+                <li class="header__nav--item"><a href="#about" class="header__nav--link">About</a></li>
+                <li class="header__nav--item"><a href="#features" class="header__nav--link">Features</a></li>
+                <li class="header__nav--item"><a href="#gallery" class="header__nav--link">Screenshots</a></li>
+                <li class="header__nav--item"><a href="#team" class="header__nav--link">Team</a></li>
+                <li class="header__nav--item"><a href="#pricing" class="header__nav--link">Pricing</a></li>
+                <div class="dropdown">
+                    <button class="dropbtn">Drop Down <i class="fas fa-angle-down"></i></button>
+                    <div class="dropdown-content">
+                        <a href="#">Drop Down 1</a>
+                        <a href="#">Drop Down 3</a>
+                        <a href="#">Drop Down 4</a>
+                        <a href="#">Drop Down 5</a>
+                    </div>
+                </div>
+                <li class="header__nav--item"><a href="#blog" class="header__nav--link">Blog</a></li>
+                <li class="header__nav--item"><a href="#contact" class="header__nav--link">Contact</a></li>
+            </ul>
+
+            <!-- mobile hamburger btn -->
+            <i class="fas fa-bars header__mobile--btn"></i>
+        </nav>
+    </header>
+
+    <!-- hero section-->
+    <div class="hero__wrap" id="home">
+        <div class="hero__bk"></div>
+        <h1 class="hero__title">Welcome to eStartups</h1>
+        <p class="hero__text">Elegant Bootstrap Template for Startups, Apps & more...</p>
+        <img class="hero__img" src="./img/hero-img.png" alt="hero img" />
+        <a href="#get-started" class="hero__btn">GET STARTED</a>
+        <div class="hero__icon--list">
+            <a class="hero__icon--item" href="#"><i class="fab fa-apple"></i> App Store</a>
+            <a class="hero__icon--item" href="#"><i class="fas fa-play"></i> Google Play</a>
+            <a class="hero__icon--item" href="#"><i class="fab fa-windows"></i> windows</a>
+        </div>
+    </div>
+
+    <!-- intro text -->
+    <section class="intro__waypoint">
+    <section class="intro__wrap--one" id="get-started">
+        <h1 class="intro__title">Simple Systeme Fordiscount</h1>
+        <p class="intro__text">Integer Cursus Bibendum Augue Ac Cursus .</p>
+    </section>
+    <!-- intro section -->
+    <!-- <section class="intro__wrap--two">
+        <div class="intro__col--wrap">
+            <div class="intro__col--one">
+                <img class="intro__img" src="./img/cloud.svg" alt="cloud icon"/>
+                <h4 class="intro__title--small">INTRODUCING WHATSAPP</h4>
+                <p class="intro__text--small">Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+                <a class="intro__link" href="#">Read More</a>
+            </div>
+            <div class="intro__col--two">
+                <img class="intro__img" src="./img/planet.svg" alt="planet icon"/>
+                <h4 class="intro__title--small">USER FREINDLY INTERFACE</h4>
+                <p class="intro__text--small">Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+                <a class="intro__link" href="#">Read More</a>
+            </div>
+            <div class="intro__col--three">
+                <img class="intro__img" src="./img/asteroid.svg" alt="asteroid icon"/>
+                <h4 class="intro__title--small">BUILD THE APP EVERYONE LOVE</h4>
+                <p class="intro__text--small">Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+                <a class="intro__link" href="#">Read More</a>
+            </div>
+        </div>
+    </section> -->
+    </section>
+
+    <!-- introV2 new css -->
+    <section class="intro2">
+        <section class="intro2__col--wrap">
+            <div class="intro2__col">
+                <img class="intro2__img" src="./img/cloud.svg" alt="cloud icon"/>
+                <h4 class="intro2__title--small">INTRODUCING WHATSAPP</h4>
+                <p class="intro2__text--small">Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+                <a class="intro2__link" href="#">Read More</a>
+            </div>
+            <div class="intro2__col">
+                <img class="intro2__img" src="./img/planet.svg" alt="planet icon"/>
+                <h4 class="intro2__title--small">USER FREINDLY INTERFACE</h4>
+                <p class="intro2__text--small">Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+                <a class="intro2__link" href="#">Read More</a>
+            </div>
+            <div class="intro2__col">
+                <img class="intro2__img" src="./img/asteroid.svg" alt="asteroid icon"/>
+                <h4 class="intro2__title--small">BUILD THE APP EVERYONE LOVE</h4>
+                <p class="intro2__text--small">Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+                <a class="intro2__link" href="#">Read More</a>
+            </div>
+        </section>
+    </section>
+
+    <!-- about section -->
+    <section class="about__waypoint">
+    <section class="about" id="about">
+        <div class="about__col--one">
+            <img class="about__img" src="./img/about-img.png" />
+        </div>
+        <div class="about__col--two">
+            <div class="about__text--wrap">
+                <h1 class="about__title"><span class="about__title--span">ESTARTUP</span> UI Design<br /> Mobile</h1>
+                <p class="about__text">
+                    Consectetur adipiscing elit, sed do eiusmod tempor incididunt<br /> 
+                    ut labore et dolore magna aliqua. Ut enim ad minim veniam,<br />
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea<br /> 
+                    commodo consequat
+                </p>
+                <ul class="about__list">
+                    <li class="about__item"><span class="about__item--span">></span>Creative Design</li>
+                    <li class="about__item"><span class="about__item--span">></span>Retina Ready</li>
+                    <li class="about__item"><span class="about__item--span">></span>Easy To Use</li>
+                    <li class="about__item"><span class="about__item--span">></span>Unlimited Features</li>
+                    <li class="about__item"><span class="about__item--span">></span>Unlimited Features</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    </section>
+
+    <!-- features intro text -->
+    <section class="features__waypoint">
+    <section class="intro__wrap--one" id="features">
+        <h1 class="intro__title">Amazing Features.</h1>
+        <p class="intro__text">Integer Cursus Bibendum Augue Ac Cursus .</p>
+    </section>
+    <!-- features section row 1 -->
+    <!-- <section class="features">
+        <div class="features__col--wrap">
+            <div class="features__col--one">
+                <img class="features__img" src="./img/paint-palette.svg" alt="cloud icon"/>
+                <h4 class="features__title--small">CREATIVE DESIGN</h4>
+                <p class="features__text--small">Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+            </div>
+            <div class="features__col--two">
+                <img class="features__img" src="./img/vector.svg" alt="planet icon"/>
+                <h4 class="features__title--small">RETINA READY</h4>
+                <p class="features__text--small">Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+            </div>
+            <div class="features__col--three">
+                <img class="features__img" src="./img/design-tool.svg" alt="asteroid icon"/>
+                <h4 class="features__title--small">EASY TO USE</h4>
+                <p class="features__text--small">Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+            </div>
+            <div class="features__col--three">
+                <img class="features__img" src="./img/asteroid.svg" alt="asteroid icon"/>
+                <h4 class="features__title--small">FREE UPDATES</h4>
+                <p class="features__text--small">Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- features section row 2 -->
+    <!-- <section class="features">
+        <div class="features__col--wrap">
+            <div class="features__col--one">
+                <img class="features__img" src="./img/asteroid.svg" alt="cloud icon"/>
+                <h4 class="features__title--small">FREE UPDATES</h4>
+                <p class="features__text--small">Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+            </div>
+            <div class="features__col--two">
+                <img class="features__img" src="./img/cloud-computing.svg" alt="planet icon"/>
+                <h4 class="features__title--small">APP STORE SUPPORT</h4>
+                <p class="features__text--small">Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+            </div>
+            <div class="features__col--three">
+                <img class="features__img" src="./img/pixel.svg" alt="asteroid icon"/>
+                <h4 class="features__title--small">PERFECT PIXEL</h4>
+                <p class="features__text--small">Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+            </div>
+            <div class="features__col--three">
+                <img class="features__img" src="./img/code.svg" alt="asteroid icon"/>
+                <h4 class="features__title--small">CLEAN CODES</h4>
+                <p class="features__text--small">Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+            </div>
+        </div>
+    </section>
+    </section> -->
+
+    <!-- featuresv2 new css -->
+    <section class="features2">
+        <div class="features2__col--wrap">
+            <div class="features2__col">
+                <img class="features2__img" src="./img/paint-palette.svg" alt="cloud icon"/>
+                <h4 class="features2__title--small">CREATIVE DESIGN</h4>
+                <p class="features2__text--small">Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+            </div>
+            <div class="features2__col">
+                <img class="features2__img" src="./img/vector.svg" alt="planet icon"/>
+                <h4 class="features2__title--small">RETINA READY</h4>
+                <p class="features2__text--small">Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+            </div>
+            <div class="features2__col">
+                <img class="features2__img" src="./img/design-tool.svg" alt="asteroid icon"/>
+                <h4 class="features2__title--small">EASY TO USE</h4>
+                <p class="features2__text--small">Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+            </div>
+            <div class="features2__col">
+                <img class="features2__img" src="./img/asteroid.svg" alt="asteroid icon"/>
+                <h4 class="features2__title--small">FREE UPDATES</h4>
+                <p class="features2__text--small">Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+            </div>
+        </div>
+    </section>
+    <section class="features2">
+            <div class="features2__col--wrap">
+                <div class="features2__col">
+                    <img class="features2__img" src="./img/asteroid.svg" alt="cloud icon"/>
+                    <h4 class="features2__title--small">FREE UPDATES</h4>
+                    <p class="features2__text--small">Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+                </div>
+                <div class="features2__col">
+                    <img class="features2__img" src="./img/cloud-computing.svg" alt="planet icon"/>
+                    <h4 class="features2__title--small">APP STORE SUPPORT</h4>
+                    <p class="features2__text--small">Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+                </div>
+                <div class="features2__col">
+                    <img class="features2__img" src="./img/pixel.svg" alt="asteroid icon"/>
+                    <h4 class="features2__title--small">PERFECT PIXEL</h4>
+                    <p class="features2__text--small">Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+                </div>
+                <div class="features2__col">
+                    <img class="features2__img" src="./img/code.svg" alt="asteroid icon"/>
+                    <h4 class="features2__title--small">CLEAN CODES</h4>
+                    <p class="features2__text--small">Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+                </div>
+            </div>
+        </section>
+        </section>
+
+    <!-- gallery intro text -->
+    <section class="gallery__waypoint">
+    <section class="intro__wrap--one" id="gallery">
+        <h1 class="intro__title">App Gallery</h1>
+        <p class="intro__text">Integer Cursus Bibendum Augue Ac Cursus .</p>
+    </section>
+    <!-- gallery section -->
+    <!-- <section class="gallery">
+        <div class="gallery__col--wrap">
+            <div class="gallery__col" id="gal-1">
+                <img class="gallery__img" src="./img/1.jpg" alt="gallery img" />
+            </div>
+            <div class="gallery__col" id="gal-2">
+                <img class="gallery__img" src="./img/2.jpg" alt="gallery img" />
+            </div>
+            <div class="gallery__col" id="gal-3">
+                <img class="gallery__img" src="./img/3.jpg" alt="gallery img" />
+            </div>
+            <div class="gallery__col" id="gal-4">
+                <img class="gallery__img" src="./img/4.jpg" alt="gallery img" />
+            </div>
+        </div>
+        <div class="gallery__btn--wrap">
+            <i class="fas fa-circle gallery__btn--icon active__slide"></i>
+            <i class="fas fa-circle gallery__btn--icon"></i>
+            <i class="fas fa-circle gallery__btn--icon"></i>
+        </div>
+    </section>
+    </section> -->
+
+    <!-- galleryv2 new css -->
+    <section class="gallery2">
+        <div class="gallery2__col--wrap">
+            <div class="gallery2__col" id="gal-1">
+                <img class="gallery2__img" src="./img/1.jpg" alt="gallery2 img" />
+            </div>
+            <div class="gallery2__col" id="gal-2">
+                <img class="gallery2__img" src="./img/2.jpg" alt="gallery2 img" />
+            </div>
+            <div class="gallery2__col" id="gal-3">
+                <img class="gallery2__img" src="./img/3.jpg" alt="gallery2 img" />
+            </div>
+            <div class="gallery2__col" id="gal-4">
+                <img class="gallery2__img" src="./img/4.jpg" alt="gallery2 img" />
+            </div>
+        </div>
+        <div class="gallery__btn--wrap">
+            <i class="fas fa-circle gallery__btn--icon active__slide"></i>
+            <i class="fas fa-circle gallery__btn--icon"></i>
+            <i class="fas fa-circle gallery__btn--icon"></i>
+        </div>
+    </section>
+    </section>
+
+    <!-- video section -->
+    <section class="video__waypoint">
+    <section class="video__wrap">
+        <div class="video__overlay"></div>
+        <div class="video__play--btn--wrap">
+            <button class="video__play--btn" id="open-modal">
+                <i class="fas fa-play video__play--btn--icon"></i>
+            </button>
+        </div>
+    </section>
+    </section>
+
+    <!-- team intro text -->
+    <section class="team__waypoint">
+    <section class="intro__wrap--one" id="team">
+        <h1 class="intro__title">Team Member</h1>
+        <p class="intro__text">Integer Cursus Bibendum Augue Ac Cursus .</p>
+    </section>
+    <!-- team member section -->
+    <!-- <section class="team">
+        <div class="team__col--wrap">
+            <div class="team__col--one">
+                <div class="team__text--wrap">
+                    <div class="team__icon--list">
+                        <a class="team__icon--item" href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a class="team__icon--item" href="#"><i class="fab fa-twitter"></i></a>
+                        <a class="team__icon--item" href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                    <p class="team__title">manager</p>
+                    <p class="team__text">KIMBERLY TRAN</p>
+                </div>
+            </div>
+            <div class="team__col--two">
+                <div class="team__text--wrap">
+                    <div class="team__icon--list">
+                        <a class="team__icon--item" href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a class="team__icon--item" href="#"><i class="fab fa-twitter"></i></a>
+                        <a class="team__icon--item" href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                    <p class="team__title">manager</p>
+                    <p class="team__text">KIMBERLY TRAN</p>
+                </div>
+            </div>
+            <div class="team__col--three">
+                <div class="team__text--wrap">
+                    <div class="team__icon--list">
+                        <a class="team__icon--item" href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a class="team__icon--item" href="#"><i class="fab fa-twitter"></i></a>
+                        <a class="team__icon--item" href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                    <p class="team__title">manager</p>
+                    <p class="team__text">KIMBERLY TRAN</p>
+                </div>
+            </div>
+            <div class="team__col--four">
+                <div class="team__text--wrap">
+                    <div class="team__icon--list">
+                        <a class="team__icon--item" href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a class="team__icon--item" href="#"><i class="fab fa-twitter"></i></a>
+                        <a class="team__icon--item" href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                    <p class="team__title">manager</p>
+                    <p class="team__text">KIMBERLY TRAN</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    </section> -->
+
+    <section class="team2">
+        <div class="team2__col--wrap">
+            <div class="team2__col--one">
+                <div class="team2__text--wrap">
+                    <div class="team2__icon--list">
+                        <a class="team2__icon--item" href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a class="team2__icon--item" href="#"><i class="fab fa-twitter"></i></a>
+                        <a class="team2__icon--item" href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                    <p class="team2__title">manager</p>
+                    <p class="team2__text">KIMBERLY TRAN</p>
+                </div>
+            </div>
+            <div class="team2__col--two">
+                <div class="team2__text--wrap">
+                    <div class="team2__icon--list">
+                        <a class="team2__icon--item" href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a class="team2__icon--item" href="#"><i class="fab fa-twitter"></i></a>
+                        <a class="team2__icon--item" href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                    <p class="team2__title">manager</p>
+                    <p class="team2__text">KIMBERLY TRAN</p>
+                </div>
+            </div>
+            <div class="team2__col--three">
+                <div class="team2__text--wrap">
+                    <div class="team2__icon--list">
+                        <a class="team2__icon--item" href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a class="team2__icon--item" href="#"><i class="fab fa-twitter"></i></a>
+                        <a class="team2__icon--item" href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                    <p class="team2__title">manager</p>
+                    <p class="team2__text">KIMBERLY TRAN</p>
+                </div>
+            </div>
+            <div class="team2__col--four">
+                <div class="team2__text--wrap">
+                    <div class="team2__icon--list">
+                        <a class="team2__icon--item" href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a class="team2__icon--item" href="#"><i class="fab fa-twitter"></i></a>
+                        <a class="team2__icon--item" href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                    <p class="team2__title">manager</p>
+                    <p class="team2__text">KIMBERLY TRAN</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    </section>
+
+    <!-- bootstrap4 slide -->
+    <section class="tes__waypoint">
+    <div id="demo" class="carousel slide" data-ride="carousel">
+            <i class="fas fa-quote-right tes__icon"></i>
+
+    <!-- slideshow -->
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <h1 class="tes__title">Our Users Speak Volume Us</h1>
+                <p class="tes__text--long">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been<br />
+                    the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley<br /> 
+                    of type and scrambled it to make a type specimen book. It has survived not only five centuries.
+                </p>
+                <p class="tes__text">
+                    <span class="tes__text--span">KIMBERLY TRAN</span> MANAGER
+                </p>
+        </div>
+        <div class="carousel-item">
+            <h1 class="tes__title">Our Users Speak Volume Us</h1>
+                <p class="tes__text--long">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been<br />
+                    the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley<br /> 
+                    of type and scrambled it to make a type specimen book. It has survived not only five centuries.
+                </p>
+                <p class="tes__text">
+                    <span class="tes__text--span">DAVID SPARK</span> MANAGER
+                </p>
+        </div>
+        <div class="carousel-item">
+            <h1 class="tes__title">Our Users Speak Volume Us</h1>
+                <p class="tes__text--long">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been<br />
+                    the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley<br /> 
+                    of type and scrambled it to make a type specimen book. It has survived not only five centuries.
+                </p>
+                <p class="tes__text">
+                    <span class="tes__text--span">HENDERSON</span> MANAGER
+                </p>
+        </div>
+        <ul class="carousel-indicators">
+            <li data-target="#demo" data-slide-to="0" class="active"></li>
+            <li data-target="#demo" data-slide-to="1"></li>
+            <li data-target="#demo" data-slide-to="2"></li>
+        </ul>
+    </div>
+    </div>
+    </section>
+
+    <!-- price intro text -->
+    <section class="price__waypoint">
+    <section class="intro__wrap--one" id="pricing">
+        <h1 class="intro__title">Meet With Price</h1>
+        <p class="intro__text">Integer Cursus Bibendum Augue Ac Cursus .</p>
+    </section>
+    <!-- price section -->
+    <!-- <section class="price">
+        <div class="price__col--wrap">
+            <div class="price__col--one">
+                <p class="price__title">BASIC</p>
+                <p class="price__number">$29</p>
+                <div class="price__details">
+                    <p class="price__text"><span class="price__text--span">4 GB</span> Ram</p>
+                    <p class="price__text"><span class="price__text--span">24/7</span> Tech Support</p>
+                    <p class="price__text"><span class="price__text--span">40 GB</span> SSD Cloud Storage</p>
+                    <p class="price__text">Monthly Backups</p>
+                    <p class="price__text">Palo Protection</p>
+                </div>
+                <button class="price__btn"><i class="fas fa-shopping-cart price__btn--icon"></i> BUY NOW</button>
+            </div>
+            <div class="price__col--two">
+                <p class="price__title">PERSONAL</p>
+                <p class="price__number">$29</p>
+                <div class="price__details">
+                    <p class="price__text"><span class="price__text--span">4 GB</span> Ram</p>
+                    <p class="price__text"><span class="price__text--span">24/7</span> Tech Support</p>
+                    <p class="price__text"><span class="price__text--span">40 GB</span> SSD Cloud Storage</p>
+                    <p class="price__text">Monthly Backups</p>
+                    <p class="price__text">Palo Protection</p>
+                </div>
+                <button class="price__btn"><i class="fas fa-shopping-cart price__btn--icon"></i> BUY NOW</button>
+            </div>
+            <div class="price__col--three">
+                <p class="price__title">BUSINESS</p>
+                <p class="price__number">$29</p>
+                <div class="price__details">
+                    <p class="price__text"><span class="price__text--span">4 GB</span> Ram</p>
+                    <p class="price__text"><span class="price__text--span">24/7</span> Tech Support</p>
+                    <p class="price__text"><span class="price__text--span">40 GB</span> SSD Cloud Storage</p>
+                    <p class="price__text">Monthly Backups</p>
+                    <p class="price__text">Palo Protection</p>
+                </div>
+                <button class="price__btn"><i class="fas fa-shopping-cart price__btn--icon"></i> BUY NOW</button>
+            </div>
+            <div class="price__col--three">
+                <p class="price__title">PROFESSIONAL</p>
+                <p class="price__number">$29</p>
+                <div class="price__details">
+                    <p class="price__text"><span class="price__text--span">4 GB</span> Ram</p>
+                    <p class="price__text"><span class="price__text--span">24/7</span> Tech Support</p>
+                    <p class="price__text"><span class="price__text--span">40 GB</span> SSD Cloud Storage</p>
+                    <p class="price__text">Monthly Backups</p>
+                    <p class="price__text">Palo Protection</p>
+                </div>
+                <button class="price__btn"><i class="fas fa-shopping-cart price__btn--icon"></i> BUY NOW</button>
+            </div>
+        </div>
+    </section>
+    </section> -->
+
+    <section class="price2">
+        <div class="price2__col--wrap">
+            <div class="price2__col">
+                <p class="price2__title">BASIC</p>
+                <p class="price2__number">$29</p>
+                <div class="price2__details">
+                    <p class="price2__text"><span class="price2__text--span">4 GB</span> Ram</p>
+                    <p class="price2__text"><span class="price2__text--span">24/7</span> Tech Support</p>
+                    <p class="price2__text"><span class="price2__text--span">40 GB</span> SSD Cloud Storage</p>
+                    <p class="price2__text">Monthly Backups</p>
+                    <p class="price2__text">Palo Protection</p>
+                </div>
+                <button class="price2__btn"><i class="fas fa-shopping-cart price2__btn--icon"></i> BUY NOW</button>
+            </div>
+            <div class="price2__col">
+                <p class="price2__title">PERSONAL</p>
+                <p class="price2__number">$29</p>
+                <div class="price2__details">
+                    <p class="price2__text"><span class="price2__text--span">4 GB</span> Ram</p>
+                    <p class="price2__text"><span class="price2__text--span">24/7</span> Tech Support</p>
+                    <p class="price2__text"><span class="price2__text--span">40 GB</span> SSD Cloud Storage</p>
+                    <p class="price2__text">Monthly Backups</p>
+                    <p class="price2__text">Palo Protection</p>
+                </div>
+                <button class="price2__btn"><i class="fas fa-shopping-cart price2__btn--icon"></i> BUY NOW</button>
+            </div>
+            <div class="price2__col">
+                <p class="price2__title">BUSINESS</p>
+                <p class="price2__number">$29</p>
+                <div class="price2__details">
+                    <p class="price2__text"><span class="price2__text--span">4 GB</span> Ram</p>
+                    <p class="price2__text"><span class="price2__text--span">24/7</span> Tech Support</p>
+                    <p class="price2__text"><span class="price2__text--span">40 GB</span> SSD Cloud Storage</p>
+                    <p class="price2__text">Monthly Backups</p>
+                    <p class="price2__text">Palo Protection</p>
+                </div>
+                <button class="price2__btn"><i class="fas fa-shopping-cart price2__btn--icon"></i> BUY NOW</button>
+            </div>
+            <div class="price2__col">
+                <p class="price2__title">PROFESSIONAL</p>
+                <p class="price2__number">$29</p>
+                <div class="price2__details">
+                    <p class="price2__text"><span class="price2__text--span">4 GB</span> Ram</p>
+                    <p class="price2__text"><span class="price2__text--span">24/7</span> Tech Support</p>
+                    <p class="price2__text"><span class="price2__text--span">40 GB</span> SSD Cloud Storage</p>
+                    <p class="price2__text">Monthly Backups</p>
+                    <p class="price2__text">Palo Protection</p>
+                </div>
+                <button class="price2__btn"><i class="fas fa-shopping-cart price2__btn--icon"></i> BUY NOW</button>
+            </div>
+        </div>
+    </section>
+    </section>
+
+    <!-- latest intro text -->
+    <section class="blog__waypoint">
+    <section class="intro__wrap--one" id="blog">
+        <h1 class="intro__title">Latest Posts</h1>
+        <p class="intro__text">Integer Cursus Bibendum Augue Ac Cursus .</p>
+    </section>
+    <!-- latest section -->
+    <!-- <section class="latest">
+        <div class="latest__col--wrap">
+            <div class="latest__col--one">
+                <div class="latest__img--one">
+                </div>
+                <div class="latest__text--wrap">
+                    <a href="#" class="latest__text">Whats Is the Difference Between<br />
+                    Good And Bad Typography</a>
+                    <div class="latest__details--wrap">
+                        <p class="latest__date">05, juin 2017</p>
+                        <a class="latest__link" href="#">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="latest__col--two">
+                <div class="latest__img--two">
+                </div>
+                <div class="latest__text--wrap">
+                    <a href="#" class="latest__text">Whats Is the Difference Between<br />
+                    Good And Bad Typography</a>
+                    <div class="latest__details--wrap">
+                        <p class="latest__date">05, juin 2017</p>
+                        <a class="latest__link" href="#">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="latest__col--three">
+                <div class="latest__img--three">
+                </div>
+                <div class="latest__text--wrap">
+                    <a href="#" class="latest__text">Whats Is the Difference Between<br />
+                    Good And Bad Typography</a>
+                    <div class="latest__details--wrap">
+                        <p class="latest__date">05, juin 2017</p>
+                        <a class="latest__link" href="#">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    </section> -->
+
+    <section class="latest2">
+        <div class="latest2__col--wrap">
+            <div class="latest2__col--one">
+                <div class="latest2__img--one">
+                </div>
+                <div class="latest2__text--wrap">
+                    <a href="#" class="latest2__text">Whats Isthe Difference Between<br />
+                    Good And Bad Typography</a>
+                    <div class="latest2__details--wrap">
+                        <p class="latest2__date">05, juin 2017</p>
+                        <a class="latest2__link" href="#">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="latest2__col--two">
+                <div class="latest2__img--two">
+                </div>
+                <div class="latest2__text--wrap">
+                    <a href="#" class="latest2__text">Whats Isthe Difference Between<br />
+                    Good And Bad Typography</a>
+                    <div class="latest2__details--wrap">
+                        <p class="latest2__date">05, juin 2017</p>
+                        <a class="latest2__link" href="#">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="latest2__col--three">
+                <div class="latest2__img--three">
+                </div>
+                <div class="latest2__text--wrap">
+                    <a href="#" class="latest2__text">Whats Isthe Difference Between<br />
+                    Good And Bad Typography</a>
+                    <div class="latest2__details--wrap">
+                        <p class="latest2__date">05, juin 2017</p>
+                        <a class="latest2__link" href="#">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    </section>
+
+    <!-- newsletter section -->
+    <section class="newsletter__waypoint">
+    <section class="newsletter">
+        <div class="newsletter__overlay"></div>
+        <form class="newsletter__form">
+            <input class="newsletter__input" type="email" placeholder="Email Address"/>
+            <button class="newsletter__btn"><i class="fas fa-location-arrow newsletter__icon"></i>SUBSCRIBE</button>
+        </form>
+        <ul class="newsletter__icon--list">
+            <li class="newsletter__icon--item"><a href="#"><i class="fab fa-facebook-f newsletter__icon--s"></i></a></li>
+            <li class="newsletter__icon--item"><a href="#"><i class="fab fa-twitter newsletter__icon--s"></i></a></li>
+            <li class="newsletter__icon--item"><a href="#"><i class="fab fa-google-plus-g newsletter__icon--s"></i></a></li>
+            <li class="newsletter__icon--item"><a href="#"><i class="fab fa-linkedin-in newsletter__icon--s"></i></a></li>
+        </ul>
+    </section>
+    </section>
+
+    <!-- contact intro text -->
+    <section class="intro__wrap--one" id="contact">
+        <h1 class="intro__title">Contact</h1>
+        <p class="intro__text">Sed Ut Perspiciatis Unde Omnis Iste Natus Error Sit Voluptatem Accusantium Doloremque</p>
+    </section>
+    <!-- contact section -->
+    <section class="contact">
+        <div class="contact__col--one">
+            <div class="contact__details--wrap">
+                <i class="fas fa-map-marker-alt contact__icon"></i>
+                <p class="contact__text">
+                    A108 Adam Street <br/>
+                    New York, NY 535022
+                </p>
+            </div>
+            <div class="contact__details--wrap">
+                <i class="fas fa-envelope contact__icon"></i>
+                <p class="contact__text">
+                    info@example.com
+                </p>
+            </div>
+            <div class="contact__details--wrap">
+                <i class="fa fa-phone contact__icon phone"></i>
+                <p class="contact__text">
+                    +1 5589 55488 55s
+                </p>
+            </div>
+            <ul class="contact__icon--list">
+                <li class="contact__icon--item"><a href="#"><i class="fab fa-twitter contact__icon--s"></i></a></li>
+                <li class="contact__icon--item"><a href="#"><i class="fab fa-facebook-f contact__icon--s"></i></a></li>
+                <li class="contact__icon--item"><a href="#"><i class="fab fa-instagram contact__icon--s"></i></a></li>
+                <li class="contact__icon--item"><a href="#"><i class="fab fa-google-plus-g contact__icon--s"></i></a></li>
+                <li class="contact__icon--item"><a href="#"><i class="fab fa-linkedin-in contact__icon--s"></i></a></li>
+            </ul>
+        </div>
+        <form class="contact__col--two">
+            <input class="contact__input" placeholder="Your Name"/>
+            <input class="contact__input" placeholder="Your Email"/>
+            <input class="contact__input" placeholder="Subject"/>
+            <textarea class="contact__textarea" placeholder="Message"></textarea>
+            <button class="contact__btn">Send Message</button>
+        </form>
+    </section>
+
+    <!-- sub footer -->
+    <div class="subfooter">
+        <div class="subfooter__wrap">
+            <div class="subfooter__col--lg">
+                <h3 class="subfooter__title">eStartup</h3>
+                <p class="subfooter__text--long">
+                    Lorem Ipsum is simply dummy text of the printing<br/>
+                    and typesetting industry. Lorem Ipsum has been the<br />
+                    industry's standard dummy text ever since the.
+                </p>
+            </div>
+            <div class="subfooter__col--sm">
+                <h6 class="subfooter__title--small">ABOUT US</h6>
+                <ul class="subfooter__item--list">
+                    <li class="subfooter__item">About Us</li>
+                    <li class="subfooter__item">Features Item</li>
+                    <li class="subfooter__item">Live Streaming</li>
+                    <li class="subfooter__item">Privacy Policy</li>
+                </ul>
+            </div>
+            <div class="subfooter__col--sm">
+                <h6 class="subfooter__title--small">ABOUT US</h6>
+                <ul class="subfooter__item--list">
+                    <li class="subfooter__item">About Us</li>
+                    <li class="subfooter__item">Features Item</li>
+                    <li class="subfooter__item">Live Streaming</li>
+                    <li class="subfooter__item">Privacy Policy</li>
+                </ul>
+            </div>
+            <div class="subfooter__col--sm">
+                <h6 class="subfooter__title--small">SUPPORT</h6>
+                <ul class="subfooter__item--list">
+                    <li class="subfooter__item">Faq</li>
+                    <li class="subfooter__item">Editor Help</li>
+                    <li class="subfooter__item">Contact Us</li>
+                    <li class="subfooter__item">Privacy Policy</li>
+                </ul>
+            </div>
+            <div class="subfooter__col--sm">
+                <h6 class="subfooter__title--small">ABOUT US</h6>
+                <ul class="subfooter__item--list">
+                    <li class="subfooter__item">About Us</li>
+                    <li class="subfooter__item">Features Item</li>
+                    <li class="subfooter__item">Live Streaming</li>
+                    <li class="subfooter__item">Privacy Policy</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer section -->
+    <footer class="footer">
+        <p class="footer__title">&copy; Copyrights eStartup. All rights reserved.</p>
+        <p class="footer__text">Designed by <a class="footer__link--boot" href="https://bootstrapmade.com/" target="_blank">BootstrapMade</a></p>
+    </footer>
+
+</body>
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Bootstrap4 Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+    <!-- bundle.js -->
+    <script type="text/javascript" src="scripts/bundle.js"></script>
+</html>
